@@ -10,6 +10,7 @@
 		5F7D129A1F70755000E42B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D12991F70755000E42B6F /* AppDelegate.swift */; };
 		5F7D129C1F70755000E42B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7D129B1F70755000E42B6F /* Assets.xcassets */; };
 		5F7D129F1F70755000E42B6F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7D129D1F70755000E42B6F /* MainMenu.xib */; };
+		5F7D12A81F70793500E42B6F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D12A71F70793500E42B6F /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5F7D129E1F70755000E42B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5F7D12A01F70755000E42B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F7D12A11F70755000E42B6F /* Hue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hue.entitlements; sourceTree = "<group>"; };
+		5F7D12A71F70793500E42B6F /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		5F7D12981F70755000E42B6F /* Hue */ = {
 			isa = PBXGroup;
 			children = (
+				5F7D12A71F70793500E42B6F /* Networking.swift */,
 				5F7D12991F70755000E42B6F /* AppDelegate.swift */,
 				5F7D129B1F70755000E42B6F /* Assets.xcassets */,
 				5F7D129D1F70755000E42B6F /* MainMenu.xib */,
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F7D129A1F70755000E42B6F /* AppDelegate.swift in Sources */,
+				5F7D12A81F70793500E42B6F /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +263,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Hue/Hue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Hue/Info.plist;
@@ -274,7 +277,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Hue/Hue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Hue/Info.plist;

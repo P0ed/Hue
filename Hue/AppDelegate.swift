@@ -1,27 +1,15 @@
-//
-//  AppDelegate.swift
-//  Hue
-//
-//  Created by Konstantin Sukharev on 19/09/2017.
-//  Copyright © 2017 P0ed. All rights reserved.
-//
-
 import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBOutlet weak var window: NSWindow!
-
+	let net = Networking(baseURL: "http://192.168.1.2/")
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
-		// Insert code here to initialize your application
+
+		net.request(method: .post, path: "api", args: ["devicetype": "huebeats#mbp"]) { (response: Response<[String: String]>) in
+
+		}
 	}
-
-	func applicationWillTerminate(_ aNotification: Notification) {
-		// Insert code here to tear down your application
-	}
-
-
 }
-
