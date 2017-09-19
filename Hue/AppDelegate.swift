@@ -4,12 +4,12 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBOutlet weak var window: NSWindow!
-	let net = Networking(baseURL: "http://192.168.1.2/")
+	let api = API(baseURL: "http://192.168.1.2/api", username: "QgsXlbOGrAPcK-wJjpRtFCLMBlmo8K7XXmEl26WU")
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 
-		net.request(method: .post, path: "api", args: ["devicetype": "huebeats#mbp"]) { (response: Response<[String: String]>) in
-
+		api.allLights().onComplete { (r) in
+			print(r)
 		}
 	}
 }
